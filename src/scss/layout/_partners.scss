@@ -1,0 +1,37 @@
+.partners {
+
+    // .partners__title
+
+    &__title {
+        @include clamp (font-size, 38px, 48px, 320px, 1440px);
+        @include clamp (margin-bottom, 35px, 53px, 320px, 1440px);
+    }
+
+    // .partners__items
+
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        @include md {
+            justify-content: space-evenly;
+        }
+    }
+
+    // .partners__item
+
+    &__item {
+        width: max-content;
+        height: max-content;
+
+        svg {
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            fill: #83898F;
+        }
+    }
+}

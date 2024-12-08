@@ -1,0 +1,30 @@
+:root {
+	/* Container */
+	--container-width: 1420px;
+	--container-padding: 20px;
+
+	/* Fonts */
+	--font-main: "Work Sans", sans-serif;
+	--font-secondary: "Inter", sans-serif;
+
+	/* Colors */
+	--color-white: #fff;
+	--color-dark: #121B25;
+	--color-gray: #d6d6d6;
+	--color-darkBlue: #1A242F;
+	--color-accent: #1AA090;
+	--color-accentDark: #15786C;
+
+	/* Functional Colors */
+	--text-color-white: var(--color-white);
+	--text-color-dark: var(--color-dark);
+	--text-color-gray: var(--color-gray);
+	--text-color-darkBlue: var(--color-darkBlue);
+
+	--bg-color-white: var(--color-white);
+	--bg-color-dark: var(--color-dark);
+	--bg-color-darkBlue: var(--color-darkBlue);
+	--bg-color-accent: var(--color-accent);
+	--bg-color-accentDark: var(--color-accentDark);
+}
+

@@ -1,0 +1,24 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--text-color-white);
+    background-color: var(--bg-color-accent);
+    transition: all 0.3s ease-in-out;
+
+    @media (any-hover:hover) {
+        &:hover {}
+    }
+
+    &_transparent {
+        color: var(--text-color-white);
+        background-color: transparent;
+        border: 2px solid var(--bg-color-accent);
+
+        @media (any-hover:hover) {
+            &:hover {}
+        }
+    }
+}

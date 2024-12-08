@@ -1,0 +1,79 @@
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: var(--font-main);
+	background-color: var(--bg-color-dark);
+	color: var(--text-color-white);
+	overflow-x: hidden;
+}
+
+svg {
+	width: 20px;
+	height: 20px;
+}
+
+.title {
+	font-weight: 600;
+	line-height: 126%;
+	text-transform: capitalize;
+	color: var(--text-color-white);
+
+	@include md {
+		text-align: center;
+	}
+}
+
+.text {
+	font-weight: 400;
+	font-size: 18px;
+	@include clamp (font-size, 16px, 18px, 320px, 1420px);
+
+	line-height: 170%;
+	color: var(--text-color-gray);
+}
+
+.section {
+	@include clamp (padding-top, 40px, 180px, 320px, 1440px);
+	@include clamp (padding-bottom, 40px, 180px, 320px, 1440px);
+
+	&_hero {
+		position: relative;
+		@include clamp (padding-top, 35px, 95px, 320px, 1440px);
+		padding-bottom: 0px;
+	}
+}
+
+.logo {
+	position: relative;
+	display: flex;
+	font-family: var(--font-secondary);
+	font-weight: 600;
+	@include clamp (font-size, 28px, 39px, 320px, 1420px);
+	line-height: 119%;
+	color: #fff;
+	@include clamp (padding-left, 9px, 13px, 320px, 1420px);
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include clamp (width, 23px, 32px, 320px, 1420px);
+		@include clamp (height, 22px, 31px, 320px, 1420px);
+		background-color: var(--bg-color-accent);
+		z-index: -1;
+	}
+}
+
+// .link-wrapper {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100%;
+// }

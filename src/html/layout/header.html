@@ -1,0 +1,42 @@
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="#" class="header__logo logo">Rentiz</a>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#!" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#!" class="nav__link">About us</a></li>
+                    <li class="nav__item _hidden"><a href="#!" class="nav__link">Buying</a></li>
+                    <li class="nav__item _hidden"><a href="#!" class="nav__link">Renting</a></li>
+                    <li class="nav__item _hidden"><a href="#!" class="nav__link">Selling</a></li>
+                    <li class="nav__item services">
+                        <button class="services__btn-dropdown">
+                            Services
+                            <svg>
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+                            </svg>
+                        </button>
+                        <ul class="services__list">
+                            <li class="services__item"><a href="#!" class="services__link">Buying</a></li>
+                            <li class="services__item"><a href="#!" class="services__link">Renting</a></li>
+                            <li class="services__item"><a href="#!" class="services__link">Selling</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="#!" class="nav__link">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <button class="btn btn_transparent header__login">Login</button>
+                <button class="btn  header__sign">Sign Up</button>
+            </div>
+
+            <button id="mobile-btn" class="header__mobile-btn" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span class="visually-hidden">Open mobile menu</span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+@@include('../components/mobile-menu.html')

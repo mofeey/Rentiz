@@ -17,12 +17,19 @@
     &__item {
         transition: all 0.3s ease-in-out;
         line-height: 126%;
-        padding: 15px;
+        @include clamp (padding, 5px, 15px, 320px, 1440px);
+
         @media (hover: hover) {
             &:hover {
                 color: var(--text-color-dark);
                 background-color: var(--text-color-gray);
             }
+        }
+
+        &._disabled {
+            cursor: not-allowed;
+            pointer-events: none;
+            background-color: var(--text-color-gray);
         }
     }
 }

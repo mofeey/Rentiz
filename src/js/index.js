@@ -5,7 +5,7 @@
 
 // Navigation
 import { initMobileMenu, UpdateMobileNav } from "./modules/mobileMenu";
-
+import { initFilterSearch } from "./modules/filterSearch";
 
 // Sliders
 
@@ -14,7 +14,10 @@ import { initMobileMenu, UpdateMobileNav } from "./modules/mobileMenu";
 // -----Initialization----- //
 document.addEventListener("DOMContentLoaded", () => {
     initMobileMenu();
+    initFilterSearch();
 
+
+    
     // AOS and Fancybox initialization
     // AOS.init();
     // Fancybox.bind('[data-fancybox="share-gallery"]', {});

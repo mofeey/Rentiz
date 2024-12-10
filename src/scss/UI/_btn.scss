@@ -9,7 +9,9 @@
     transition: all 0.3s ease-in-out;
 
     @media (any-hover:hover) {
-        &:hover {}
+        &:hover {
+
+        }
     }
 
     &_transparent {
@@ -18,7 +20,9 @@
         border: 2px solid var(--bg-color-accent);
 
         @media (any-hover:hover) {
-            &:hover {}
+            &:hover {
+
+            }
         }
     }
 }

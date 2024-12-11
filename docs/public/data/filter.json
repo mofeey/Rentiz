@@ -1,0 +1,14 @@
+{
+    "locations": [
+        { "id": 1, "name": "New York, USA" },
+        { "id": 2, "name": "London, UK" },
+        { "id": 3, "name": "Tokyo, Japan" },
+        { "id": 4, "name": "Paris, France" }
+    ],
+    "houseTypes": [
+        { "id": 1, "name": "Cozy" },
+        { "id": 2, "name": "Comfortable" },
+        { "id": 3, "name": "Luxurious" },
+        { "id": 4, "name": "Modern" }
+    ]
+}

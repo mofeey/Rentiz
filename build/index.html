@@ -121,6 +121,7 @@
 							<div class="hero__filter filter">
 								<div class="filter__block filter__block_purpose">
 									<button class="filter__item">
+										<span class="visually-hidden">Choose purpose</span>
 										<div class="filter__name">
 											Purpose
 											<svg>
@@ -140,6 +141,7 @@
 								</div>
 								<div class="filter__block filter__block_location">
 									<button class="filter__item">
+										<span class="visually-hidden">Choose house location</span>
 										<div class="filter__name">
 											Location
 											<svg>
@@ -148,18 +150,15 @@
 										</div>
 										<div class="filter__value">Choose</div>
 										<div class="filter__dropdown filter-dropdown">
-											<ul class="filter-dropdown__list">
+											<ul id="locations" class="filter-dropdown__list">
 												<li data-state="default" class="filter-dropdown__item _disabled">Reset location</li>
-												<li class="filter-dropdown__item">New York City, USA</li>
-												<li class="filter-dropdown__item">Paris, France</li>
-												<li class="filter-dropdown__item">Tokyo, Japan</li>
-												<li class="filter-dropdown__item">Sydney, Australia</li>
 											</ul>
 										</div>
 									</button>
 								</div>
 								<div class="filter__block filter__block_type">
 									<button class="filter__item">
+										<span class="visually-hidden">Choose house type</span>
 										<div class="filter__name">
 											Type
 											<svg>
@@ -168,11 +167,8 @@
 										</div>
 										<div class="filter__value">Choose</div>
 										<div class="filter__dropdown filter-dropdown">
-											<ul class="filter-dropdown__list">
+											<ul id="type" class="filter-dropdown__list">
 												<li data-state="default" class="filter-dropdown__item _disabled">Reset type</li>
-												<li class="filter-dropdown__item">Mid-Century Modern Home</li>
-												<li class="filter-dropdown__item">Farmhouse Home</li>
-												<li class="filter-dropdown__item">Bohemian (Boho) Home</li>
 											</ul>
 										</div>
 									</button>
@@ -183,7 +179,7 @@
 						<picture>
 							<source srcset="./img/hero.webp 1x, ./img/hero_@2x.webp 2x, ./img/hero_@3x.webp 3x" type="image/webp" />
 							<source srcset="./img/hero.jpg 1x, ./img/hero_@2x.jpg 2x, ./img/hero_@3x.jpg 3x" type="image/jpeg" />
-							<img class="hero__img" src="./img/hero.jpg" width="700" height="645" alt="Big house" />
+							<img class="hero__img" src="./img/hero.jpg" width="700" height="645" alt="Big house" loading="lazy" />
 						</picture>
 						<svg class="hero__overlay">
 							<use href="./img/svgsprite/sprite.symbol.svg#hero-overlay"></use>

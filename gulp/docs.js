@@ -200,6 +200,12 @@ gulp.task("js:docs", function() {
         .pipe(gulp.dest("./docs/js/"));
 });
 
+gulp.task("data:docs", function() {
+    return gulp
+        .src("./src/public/**/*.json")
+        .pipe(gulp.dest("./docs/public/"));
+});
+
 const serverOptions = {
     livereload: true,
     open: true,

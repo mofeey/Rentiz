@@ -1,4 +1,4 @@
-import { isMobile } from "./utils/isMobile";
+import { isMobile } from "../utils/isMobile";
 
 const mobileMenu = document.querySelector(".mobile-menu");
 const mobileBtn = document.querySelector("#mobile-btn");

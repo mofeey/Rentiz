@@ -94,7 +94,6 @@ gulp.task("sass:dev", function() {
         .pipe(sourceMaps.write())
         .pipe(gulp.dest("./build/css/"))
         .pipe(browserSync.stream());
-        
 });
 
 gulp.task("images:dev", function() {
@@ -168,7 +167,7 @@ gulp.task("svgStack:dev", function() {
         .pipe(plumber(plumberNotify("SVG:dev")))
         .pipe(svgsprite(svgStack))
         .pipe(gulp.dest("./build/img/svgsprite/"))
-        .pipe(browserSync.stream())
+        .pipe(browserSync.stream());
 });
 
 gulp.task("svgSymbol:dev", function() {
@@ -201,6 +200,13 @@ gulp.task("js:dev", function() {
     );
 });
 
+gulp.task("data:dev", function() {
+    return gulp
+        .src("./src/public/**/*.json")
+        .pipe(gulp.dest("./build/public/")) 
+        .pipe(browserSync.stream());
+});
+
 gulp.task("server:dev", function() {
     browserSync.init({
         server: "./build/",
@@ -215,4 +221,5 @@ gulp.task("watch:dev", function() {
     gulp.watch("./src/img/**/*", gulp.parallel("images:dev"));
     gulp.watch("./src/files/**/*", gulp.parallel("files:dev"));
     gulp.watch("./src/js/**/*.js", gulp.parallel("js:dev"));
+    gulp.watch("./src/public/**/*", gulp.parallel("data:dev"));
 });

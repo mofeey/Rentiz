@@ -1,5 +1,23 @@
 .services {
     position: relative;
+    z-index: 10;
+
+    &._active {
+        .services__btn-dropdown {
+            color: var(--text-color-white);
+
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+
+        .services__list {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: translate(0, 0);
+        }
+    }
 
     @include min-lg {
         display: none;
@@ -24,6 +42,7 @@
             }
         }
     }
+
 
     &__btn-dropdown {
         display: flex;

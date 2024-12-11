@@ -11,9 +11,13 @@
     }
 
     @include sm {
-        grid-template-columns: 0.9fr 1fr 1fr;
+        grid-template-columns: 0.95fr 1fr 1fr;
         height: auto;
         padding: 0;
+    }
+
+    @media (max-width: 375px) {
+        grid-template-columns: 1fr;
     }
 
 
@@ -32,6 +36,12 @@
             // width: calc(257 / 889 * 100%);
             border-left: 1px solid #e8e8e8;
             border-right: 1px solid #e8e8e8;
+
+            @media (max-width: 375px) {
+                border: none;
+                border-top: 1px solid #e8e8e8;
+                border-bottom: 1px solid #e8e8e8;
+            }
         }
 
         &_type {
@@ -46,14 +56,19 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        @include clamp (padding-left, 5px, 40px, 320px, 1440px);
+        @include clamp (padding-left, 10px, 40px, 320px, 1440px);
         padding-right: 5px;
         gap: 2px;
 
         @include sm {
-            padding-top: 10px;
+            padding-top: 15px;
             padding-bottom: 15px;
         }
+
+        @media (max-width: 375px) {
+            padding: 12.5px 15px;
+        }
+
 
         @media (hover: hover) {
             &:hover {
@@ -101,6 +116,11 @@
         line-height: 126%;
         transition: all 0.5s ease-in-out;
 
+        @media (max-width: 375px) {
+            width: 100%;
+            justify-content: space-between;
+        }
+
         svg {
             fill: var(--bg-color-accent);
             transition: all 0.4s ease-in-out;
@@ -143,6 +163,10 @@
             padding: 15px;
             margin: 0 auto;
             border: 5px solid white;
+        }
+
+        @media (max-width: 375px) {
+            grid-column: auto;
         }
     }
 

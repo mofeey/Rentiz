@@ -10,16 +10,20 @@
         />
         <title>Rentiz</title>
         <link rel="stylesheet" href="./css/main.css" />
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
     </head>
 
     <body>
         @@include('layout/header.html')
         <main class="main">
             @@include('layout/hero.html') 
-            @@include('layout/partners.html')
+            @@include('layout/partners.html') 
+            @@include('layout/popular-products.html')
+            @@include('layout/features.html')
         </main>
 
         <script type="module" src="./js/index.bundle.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <div class="overlay" id="overlay"></div>
     </body>

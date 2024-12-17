@@ -1,11 +1,11 @@
-export async function initFilters() {
+
+export async function initFilters(url) {
     try {
-        const response = await fetch("../../../public/data/filter.json");
+        const response = await fetch(url);
         if (!response.ok) throw new Error("Error loading data");
         const data = await response.json();
 
         renderFilters(data);
-        
     } catch (error) {
         console.error(error);
     }

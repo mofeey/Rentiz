@@ -1,0 +1,8 @@
+[
+    { "id": 1, "image": "01", "name": "Aliva Priva Jalvin", "location": "1087 Pin Oak Drive, Clinton, USA", "beds": 4, "bath": 2, "sqft": 1203 },
+    { "id": 2, "image": "02", "name": "Greenview Villa", "location": "5678 Maple Street, Springfield, USA", "beds": 3, "bath": 2, "sqft": 980 },
+    { "id": 3, "image": "03", "name": "Ocean Breeze ", "location": "2345 Ocean Drive, Miami, USA", "beds": 5, "bath": 3, "sqft": 1500 },
+    { "id": 4, "image": "01", "name": "Aliva Priva Jalvin", "location": "1087 Pin Oak Drive, Clinton, USA", "beds": 4, "bath": 2, "sqft": 1203 },
+    { "id": 5, "image": "02", "name": "Greenview Villa", "location": "5678 Maple Street, Springfield, USA", "beds": 3, "bath": 2, "sqft": 980 },
+    { "id": 6, "image": "03", "name": "Ocean Breeze ", "location": "2345 Ocean Drive, Miami, USA", "beds": 5, "bath": 3, "sqft": 1500 }
+]

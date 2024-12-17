@@ -21,6 +21,7 @@ svg {
 	font-weight: 600;
 	line-height: 126%;
 	text-transform: capitalize;
+	text-wrap: balance;
 	color: var(--text-color-white);
 
 	@include md {
@@ -30,9 +31,7 @@ svg {
 
 .text {
 	font-weight: 400;
-	font-size: 18px;
 	@include clamp (font-size, 16px, 18px, 320px, 1420px);
-
 	line-height: 170%;
 	color: var(--text-color-gray);
 }
@@ -45,6 +44,12 @@ svg {
 		position: relative;
 		@include clamp (padding-top, 35px, 95px, 320px, 1440px);
 		padding-bottom: 0px;
+	}
+
+	&_popular {
+		background-color: var(--bg-color-darkBlue);
+		@include clamp (padding-top, 30px, 160px, 320px, 1440px);
+		@include clamp (padding-bottom, 30px, 160px, 320px, 1440px);
 	}
 }
 

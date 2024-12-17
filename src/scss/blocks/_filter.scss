@@ -156,18 +156,39 @@
     &__btn {
         width: 100%;
         @include clamp (font-size, 20px, 24px, 320px, 1440px);
-        background-color: var(--bg-color-accentDark) !important;
 
-        @include sm {
-            grid-column: 1/4;
-            padding: 15px;
-            margin: 0 auto;
-            border: 5px solid white;
+
+        &.btn {
+            background-color: var(--bg-color-accentDark);
+            border: none;
+
+            @include sm {
+                grid-column: 1/4;
+                padding: 15px;
+                margin: 0 auto;
+                border: 5px solid white;
+            }
+
+            @media (max-width: 375px) {
+                grid-column: auto;
+            }
+
+            @media (hover:none) {
+                &:active {
+                    color: var(--text-color-accent);
+                    background-color: var(--bg-color-white);
+                    border: none;
+
+                    @include sm {
+                        border: 5px solid white;
+                    }
+                }
+            }
         }
 
-        @media (max-width: 375px) {
-            grid-column: auto;
-        }
+
+
+
     }
 
 }
